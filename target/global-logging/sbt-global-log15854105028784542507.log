@@ -1,0 +1,110 @@
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.8.0 (Eclipse Adoptium Java 17.0.16)
+[debug]                                                                   Load.loadUnit: plugins took 5.126875ms
+[debug]                                                                   Load.loadUnit: defsScala took 0.001334ms
+[debug] [Loading] Scanning directory /Users/emumba/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/emumba/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 0.397333 ms
+[debug]                                                                       Load.resolveProject(global-plugins) took 0.3685ms
+[debug]                                                                     Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /Users/emumba/.sbt/1.0/plugins, plugins: List(<none>))) took 0.895292ms
+[debug] [Loading] Done in /Users/emumba/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]                                                                   Load.loadUnit: loadedProjectsRaw took 1.242666ms
+[debug]                                                                   Load.loadUnit: cleanEvalClasses took 0.010084ms
+[debug]                                                                 Load.loadUnit(file:/Users/emumba/.sbt/1.0/plugins/, ...) took 6.542584ms
+[debug]                                                               Load.apply: load took 6.885208ms
+[debug]                                                               Load.apply: resolveProjects took 0.030375ms
+[debug]                                                               Load.apply: finalTransforms took 2.006333ms
+[debug]                                                               Load.apply: config.delegates took 0.07875ms
+[debug]                                                               Load.apply: Def.make(settings)... took 15.592916ms
+[debug]                                                               Load.apply: structureIndex took 5.067166ms
+[debug]                                                               Load.apply: mkStreams took 9.58E-4ms
+[info] loading global plugins from /Users/emumba/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]                                                             Load.defaultLoad until apply took 57.10475ms
+[debug]                                                                                   Load.loadUnit: plugins took 3.340083ms
+[debug]                                                                                   Load.loadUnit: defsScala took 0.001292ms
+[debug] [Loading] Scanning directory /Users/emumba/Downloads/paidy-forex-proxy/project/project/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/emumba/Downloads/paidy-forex-proxy/project/project/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 0.224167 ms
+[debug]                                                                                       Load.resolveProject(paidy-forex-proxy-build-build-build) took 0.304041ms
+[debug]                                                                                     Load.loadTransitive: finalizeProject(Project(id paidy-forex-proxy-build-build-build, base: /Users/emumba/Downloads/paidy-forex-proxy/project/project/project, plugins: List(<none>))) took 0.609041ms
+[debug] [Loading] Done in /Users/emumba/Downloads/paidy-forex-proxy/project/project/project, returning: (paidy-forex-proxy-build-build-build)
+[debug]                                                                                   Load.loadUnit: loadedProjectsRaw took 0.889084ms
+[debug]                                                                                   Load.loadUnit: cleanEvalClasses took 0.002209ms
+[debug]                                                                                 Load.loadUnit(file:/Users/emumba/Downloads/paidy-forex-proxy/project/project/project/, ...) took 4.342625ms
+[debug]                                                                               Load.apply: load took 4.545209ms
+[debug]                                                                               Load.apply: resolveProjects took 0.0275ms
+[debug]                                                                               Load.apply: finalTransforms took 1.576291ms
+[debug]                                                                               Load.apply: config.delegates took 0.06975ms
+[debug]                                                                               Load.apply: Def.make(settings)... took 12.766125ms
+[debug]                                                                               Load.apply: structureIndex took 4.307375ms
+[debug]                                                                               Load.apply: mkStreams took 0.001083ms
+[info] loading project definition from /Users/emumba/Downloads/paidy-forex-proxy/project/project/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]                                                                             Load.loadUnit: plugins took 40.473083ms
+[debug]                                                                             Load.loadUnit: defsScala took 8.33E-4ms
+[debug] [Loading] Scanning directory /Users/emumba/Downloads/paidy-forex-proxy/project/project
+[debug]                                                                               Load.loadUnit: mkEval took 0.029375ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/emumba/Downloads/paidy-forex-proxy/project/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 0.249791 ms
+[info] loading settings for project paidy-forex-proxy-build-build from metals.sbt ...
+[debug]                                                                                 Load.resolveProject(paidy-forex-proxy-build-build) took 0.504292ms
+[debug]                                                                               Load.loadTransitive: finalizeProject(Project(id paidy-forex-proxy-build-build, base: /Users/emumba/Downloads/paidy-forex-proxy/project/project, plugins: List(<none>))) took 0.846667ms
+[debug] [Loading] Done in /Users/emumba/Downloads/paidy-forex-proxy/project/project, returning: (paidy-forex-proxy-build-build)
+[debug]                                                                             Load.loadUnit: loadedProjectsRaw took 4.127833ms
+[debug]                                                                             Load.loadUnit: cleanEvalClasses took 0.280166ms
+[debug]                                                                           Load.loadUnit(file:/Users/emumba/Downloads/paidy-forex-proxy/project/project/, ...) took 44.984042ms
+[debug]                                                                         Load.apply: load took 45.208583ms
+[debug]                                                                         Load.apply: resolveProjects took 0.025041ms
+[debug]                                                                         Load.apply: finalTransforms took 1.462791ms
+[debug]                                                                         Load.apply: config.delegates took 0.0605ms
+[debug]                                                                         Load.apply: Def.make(settings)... took 12.488291ms
+[debug]                                                                         Load.apply: structureIndex took 4.372667ms
+[debug]                                                                         Load.apply: mkStreams took 0.001292ms
+[info] loading project definition from /Users/emumba/Downloads/paidy-forex-proxy/project/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
