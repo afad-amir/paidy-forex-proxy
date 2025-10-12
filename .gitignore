@@ -1,0 +1,26 @@
+# SBT Build Files
+target/
+project/target/
+project/project/
+.history
+.cache
+.lib/
+lib_managed/
+src_managed/
+dist/
+project/metals.sbt
+
+# Metals (Scala Language Server)
+.metals/
+.bloop/
+.ammonite/
+.bsp/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
