@@ -2,6 +2,7 @@
 target/
 project/target/
 project/project/
+project/project/project/
 .history
 .cache
 .lib/
@@ -9,6 +10,7 @@ lib_managed/
 src_managed/
 dist/
 project/metals.sbt
+**/metals.sbt
 
 # Metals (Scala Language Server)
 .metals/
