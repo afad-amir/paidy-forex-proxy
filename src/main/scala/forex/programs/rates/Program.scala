@@ -13,6 +13,8 @@ class Program[F[_]: Functor](
   override def get(request: Protocol.GetRatesRequest): F[Error Either Rate] =
     EitherT(ratesService.get(Rate.Pair(request.from, request.to))).leftMap(toProgramError(_)).value
 
+  override def allRates: fs2.Stream[F, Rate] = ratesService.getAllRates
+
 }
 
 object Program {
