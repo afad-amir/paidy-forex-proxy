@@ -101,8 +101,14 @@ Due to other obligations I was unable to spend much time on writing tests for ex
 - Comprehensive test coverage of critical flows
 
 ### Quick Start
-1. Pull redis container: `docker pull redis:latest`
-2. Start Redis server `docker run --name redis-server -p 6379:6379 -d redis:latest`
+1. Pull redis container:
+```bash
+docker pull redis:latest
+```
+2. Start Redis server
+```bash
+docker run --name redis-server -p 6379:6379 -d redis:latest
+```
 3. either pull one-frame and run it on 8080 or add the configs for the live server
 4. Application  will start on http://localhost:8081 if we start it as is else host port and timeout can be configured in `src/main/resources/application.conf`
 5. Run `sbt compile` then `sbt run`
