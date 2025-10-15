@@ -60,23 +60,16 @@ once it up and running you can make api call for get as much as you need to test
 
 I started with a simple in-memory cache that worked well for single instances but had obvious limitations for distributed deployment.
 
-### Phase 2: Cluster Deployment Considerations
-
+### Phase 2: Shared Cache(Redis Implementation with Distributed Locking)
 I realized that deploying multiple nodes would create problems:
 - Each node would have its own cache
 - Multiple nodes might call OneFrame API simultaneously
 - No coordination between instances
 - Quota exhaustion from redundant calls
+- Implemented Redis as shared cache with distributed locking to solve concurrency issues. Only one node can acquire the lock and refresh rates while others wait and use the fresh data from Redis.
+- Configured the system to check Redis first on startup, reducing unnecessary OneFrame API calls and improving reliability.
 
-### Phase 3: Redis Implementation with Distributed Locking
-
-I implemented Redis as shared cache with distributed locking to solve concurrency issues. Only one node can acquire the lock and refresh rates while others wait and use the fresh data from Redis.
-
-### Phase 4: Configuration Strategy
-
-I configured the system to check Redis first on startup, reducing unnecessary OneFrame API calls and improving reliability.
-
-### Phase 5: Fault Tolerance
+### Phase 3: Fault Tolerance
 
 I built comprehensive fault tolerance so the service never crashes:
 - Try Redis cache first
@@ -84,11 +77,11 @@ I built comprehensive fault tolerance so the service never crashes:
 - Auto-reconnect when services come back online
 - Fetch Rates when redis is connected
 
-### Phase 6: Health Monitoring
+### Phase 4: Health Monitoring
 
 Added health check endpoints to provide visibility into service state, quota consumption, and whether the service can currently serve rates to customers.
 
-### Phase 7: Testing
+### Phase 5: Testing
 
 Due to other obligations I was unable to spend much time on writing tests for excellent coverage at least 80% as i should have, I mainly focused on writing test for major flows. 204 tests with 100% pass rate and 19.89% statement coverage.
 
