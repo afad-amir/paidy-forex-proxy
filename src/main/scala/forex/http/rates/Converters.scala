@@ -11,7 +11,9 @@ object Converters {
         from = rate.pair.from,
         to = rate.pair.to,
         price = rate.price,
-        timestamp = rate.timestamp
+        last_refreshed = rate.timestamp,
+        bid = rate.bid,
+        ask = rate.ask
       )
   }
 
